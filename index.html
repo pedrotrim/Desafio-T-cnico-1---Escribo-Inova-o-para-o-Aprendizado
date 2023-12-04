@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Desafio Técnico 1 - Escribo Inovação para o Aprendizado </title>
+    <script type="text/javascript">
+        function somatorioDivisiveis3e5(numero) {
+            let somatorio = 0;
+
+            for (let i = 0; i < numero; i++) {
+                if (i % 3 === 0 || i % 5 === 0) {
+                    somatorio += i;
+                }
+            }
+
+            return somatorio;
+        }
+
+        function somatorioDivisiveisPor3e5() {
+            // Obtenha o valor do input e converta para número
+            const numero = parseInt(document.getElementById("textinput").value, 10);
+
+            // Verifique se o valor é um número válido
+            if (!isNaN(numero)) {
+                // Chame a função e exiba o resultado no console
+                const resultado = somatorioDivisiveis3e5(numero);
+                // Exiba o resultado em algum lugar, por exemplo, em um alert
+                alert("O somatório dos divisíveis por 3 ou 5 até " + numero + " é: " + resultado);
+            } else {
+                alert("Por favor, insira um número válido.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input id="textinput" name="textinput" value="" type="text">
+    <button onclick="somatorioDivisiveisPor3e5()">Confirmar</button>
+</body>
+
+</html>

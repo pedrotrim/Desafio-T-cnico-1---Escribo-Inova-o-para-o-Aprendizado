@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Desafio Técnico 1 - Escribo Inovação para o Aprendizado </title>
+    <title>Curso JavaScript Progressivo</title>
     <script type="text/javascript">
         function somatorioDivisiveis3e5(numero) {
             let somatorio = 0;
@@ -19,11 +19,13 @@
         function somatorioDivisiveisPor3e5() {
             const numero = parseInt(document.getElementById("textinput").value, 10);
 
+            const resultadoLabel = document.getElementById("resultadoLabel");
+
             if (!isNaN(numero)) {
                 const resultado = somatorioDivisiveis3e5(numero);
-                alert("O somatório dos divisíveis por 3 ou 5 até " + numero + " é: " + resultado);
+                resultadoLabel.textContent = "O somatório dos divisíveis por 3 ou 5 até " + numero + " é: " + resultado;
             } else {
-                alert("Por favor, insira um número válido.");
+                resultadoLabel.textContent = "Por favor, insira um número válido.";
             }
         }
     </script>
@@ -32,6 +34,8 @@
 <body>
     <input id="textinput" name="textinput" value="" type="text">
     <button onclick="somatorioDivisiveisPor3e5()">Confirmar</button>
+    
+    <label id="resultadoLabel"></label>
 </body>
 
 </html>

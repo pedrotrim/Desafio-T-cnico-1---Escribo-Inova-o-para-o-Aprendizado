@@ -17,11 +17,11 @@ Desafio Técnico 1
 
 --Como usar exemplos:
 
-1. *colocar o Número*
-   - No campo de input, insira um número desejado. Por exemplo, você pode inserir "10".
+1. *Colocar o Número*
+   - No campo de input, insira um número desejado.  exemplo, você pode inserir o numero 10.
 
 2. *Clique em Confirmar*
    - Clique no botão "Confirmar".
 
-3. *Veja o Resultado:*
+3. *Ver o Resultado:*
    - Um alerta será exibido com o somatório dos números divisíveis por 3 ou 5 até 10.
